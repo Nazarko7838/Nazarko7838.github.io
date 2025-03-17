@@ -1,0 +1,275 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #333, #111);
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: left;
+    margin-left:1em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header img {
+    width: 130px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+
+    right: 20px;
+    z-index: 100;
+}
+
+
+.nav-menu {
+    list-style: none;
+    gap: 20px;
+}
+
+
+@media screen and (min-width: 1025px) {
+    .nav-menu {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .menu-icon {
+        display: block; 
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 190px;
+        text-align: left;
+
+    
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        pointer-events: none;
+    }
+
+
+    #menu-toggle:checked + .menu-icon + nav .nav-menu {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
+
+
+.progress-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.progress-container h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.progress-container h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+.stats {
+    background: #eef2ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.stats p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+.progress-chart img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.achievements {
+    background: #fff5cc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements li {
+    font-size: 1.2em;
+    color: #555;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        
+        text-align: center;
+        padding: 15px;
+    }
+    header img {
+        width: 140px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .progress-container {
+        padding: 15px;
+    }
+
+    .progress-container h1 {
+        font-size: 1.6em;
+    }
+
+    .stats p, .achievements li {
+        font-size: 1em;
+    }
+
+    .progress-chart img {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header img {
+        width: 70px;
+    }
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    .nav-menu {
+        width: auto;
+        height: 6em;
+        top: 30px;
+    }
+    .nav-menu a{
+        font-size: 1em;
+    }
+
+    .progress-container h1 {
+        font-size: 1.4em;
+    }
+
+    .progress-container h2 {
+        font-size: 1.2em;
+    }
+
+    .stats, .achievements {
+        padding: 10px;
+    }
+
+    .stats p, .achievements li {
+        font-size: 0.9em;
+    }
+
+    .progress-chart img {
+        max-width: 100%;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

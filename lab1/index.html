@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Лангуаге - Вивчення мов легко</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/Logo-Language.png">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/img/Logo-Language.png" alt="Лого сайту"></a>
+        <h1>Easy Лангуаге</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/lessons.html">Уроки</a></li>
+                <li><a href="/progress.html">Мій прогрес</a></li>
+                <li><a href="/practice.html">Практика</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Легке та ефективне вивчення мов</h2>
+                <p>Вивчайте нові мови весело та легко! Інтерактивні уроки, практика вимови, тести та персоналізовані плани навчання – усе це допоможе вам заговорити швидше.</p>
+                <a href="#" class="btn">Почати зараз</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Що ми пропонуємо?</h2>
+            <div class="feature-container">
+                <div class="feature">
+                    <img src="/img/lesson-icon.png" alt="Іконка уроків">
+                    <h3>Інтерактивні уроки</h3>
+                    <p>Покрокові уроки з граматики, лексики та аудіювання для всіх рівнів.</p>
+                </div>
+                <div class="feature">
+                    <img src="/img/practice-icon.png" alt="Іконка практики">
+                    <h3>Жива практика</h3>
+                    <p>Спілкуйтеся з носіями мови та беріть участь у розмовних клубах.</p>
+                </div>
+                <div class="feature">
+                    <img src="/img/progress-icon.png" alt="Іконка прогресу">
+                    <h3>Персональний прогрес</h3>
+                    <p>Відстежуйте свої досягнення та отримуйте рекомендації для покращення.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <h2>Дізнайтеся свій рівень знань</h2>
+            <p>Пройдіть швидкий тест та дізнайтеся, з якого рівня вам краще почати!</p>
+            <form id="language-test">
+                <label for="question1">1. Як буде "яблуко" англійською?</label>
+                <select id="question1">
+                    <option value="wrong">Orange</option>
+                    <option value="wrong">Banana</option>
+                    <option value="correct">Apple</option>
+                </select>
+
+                <label for="question2">2. Яке дієслово означає "читати"?</label>
+                <select id="question2">
+                    <option value="wrong">Write</option>
+                    <option value="correct">Read</option>
+                    <option value="wrong">Sing</option>
+                </select>
+
+                <button type="button" onclick="checkAnswers()">Перевірити</button>
+                <p id="quiz-result"></p>
+            </form>
+        </section>
+
+        <section class="testimonials">
+            <h2>Що кажуть наші користувачі?</h2>
+            <div class="testimonial">
+                <p>“Завдяки Easy Лангуаге я нарешті почав говорити англійською! Дякую за цікаві уроки!”</p>
+                <span>- Олександр, 25 років</span>
+            </div>
+            <div class="testimonial">
+                <p>“Дуже подобається практика з носіями мови! Це робить навчання живим та веселим.”</p>
+                <span>- Марія, 30 років</span>
+            </div>
+            <div class="testimonial">
+                <p>“План навчання адаптований до моїх потреб, і я бачу прогрес вже після кількох тижнів!”</p>
+                <span>- Андрій, 35 років</span>
+            </div>
+            <div class="testimonial">
+                <p>“Найкращий сайт для вивчення мов! Легко та зручно вивчати нові слова і граматику.”</p>
+                <span>- Олена, 28 років</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Львівська Політехніка 2025</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            let correctAnswers = 0;
+            if (document.getElementById("question1").value === "correct") correctAnswers++;
+            if (document.getElementById("question2").value === "correct") correctAnswers++;
+
+            document.getElementById("quiz-result").innerText = 
+                correctAnswers === 2 ? "Вітаємо! Ви відповіли правильно!" : "Спробуйте ще раз!";
+        }
+    </script>
+</body>
+</html>
