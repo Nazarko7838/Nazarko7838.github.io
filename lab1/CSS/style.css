@@ -143,18 +143,30 @@ nav ul li a:hover {
 
 .btn {
     display: inline-block;
-    background: #ffcc00;
-    color: #333;
-    padding: 12px 25px;
+    background: transparent;
+    color: #ff8800;
+    padding: 12px 30px;
     text-decoration: none;
-    font-size: 1.5em;
-    border-radius: 5px;
-    transition: background 0.3s;
+    font-size: 1.6em;
+    font-weight: bold;
+    border: 3px solid #ff8800; 
+    border-radius: 50px; 
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
 }
 
 .btn:hover {
-    background: #ffaa00;
+    transform: scale(1.05);
+    background-color: #ff88001f;  
+     
 }
+
+
+
+
 
 .features {
     text-align: center;
