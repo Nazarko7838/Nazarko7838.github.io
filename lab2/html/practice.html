@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link rel="stylesheet" href="../CSS/practice.css">
+    <link rel="icon" type="image/x-icon" href="../img/Logo-Language.png">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/Logo-Language.png" alt="Лого сайту"></a>
+        <h1>Easy Лангуаге</h1>
+    
+        <!-- Чекбокс для керування меню -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+    
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="progress.html">Мій прогрес</a></li>
+                <li><a href="practice.html">Практика</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <section class="practice-container">
+            <h1>Практика</h1>
+            <p>Інтерактивні вправи для покращення навичок!</p>
+
+            <!-- Тест -->
+            <div class="test-section">
+                <h2>📝 Тест: Основи граматики</h2>
+                <p>Обери правильний варіант відповіді:</p>
+                <form class="quiz">
+                    <label>1. Як перекласти "Я вивчаю англійську"?</label>
+                    <input type="radio" name="q1" value="a"> I study English<br>
+                    <input type="radio" name="q1" value="b"> I am studied English<br>
+                    <input type="radio" name="q1" value="c"> I will study English<br>
+                    <button type="submit">Перевірити</button>
+                </form>
+            </div>
+
+            <!-- Діалог з чат-ботом -->
+            <div class="chatbot-section">
+                <h2>💬 Діалог з чат-ботом</h2>
+                <div class="chat-window">
+                    <div class="chat-message bot">Привіт! Як справи? 😃</div>
+                </div>
+                <input type="text" placeholder="Введіть відповідь..." class="chat-input">
+                <button class="chat-send">Надіслати</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Львівська Політехніка 2025</p>
+    </footer>
+</body>
+</html>
