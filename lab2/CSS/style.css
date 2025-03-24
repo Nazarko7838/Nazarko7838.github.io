@@ -202,42 +202,74 @@ nav ul li a:hover {
     padding: 40px;
 }
 
+.quiz h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.quiz-controls {
+    margin-bottom: 20px;
+}
+
+.quiz label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.quiz select {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.quiz select:focus {
+    border-color: #ff8800;
+    outline: none;
+}
+
 .quiz form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+    align-items: center;
 }
 
 .quiz label {
     margin-top: 10px;
     font-size: 1.2em;
+    display: block;
 }
 
 .quiz select {
-    padding: 8px;
-    font-size: 1em;
-    margin-top: 5px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .quiz button {
     margin-top: 20px;
-    padding: 10px;
+    padding: 12px 25px;
     background: #ffcc00;
+    color: #333;
     border: none;
     font-size: 1.2em;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
 .quiz button:hover {
     background: #ffaa00;
+    transform: scale(1.05);
 }
 
 #quiz-result {
     font-size: 1.3em;
     margin-top: 15px;
     font-weight: bold;
+    color: #333;
 }
 
 .testimonials {

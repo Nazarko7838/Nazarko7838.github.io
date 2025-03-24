@@ -54,23 +54,22 @@
 
         <section class="quiz">
             <h2>Дізнайтеся свій рівень знань</h2>
-            <p>Пройдіть швидкий тест та дізнайтеся, з якого рівня вам краще почати!</p>
+            <p>Пройдіть тест та визначте свій рівень володіння мовою!</p>
+        
+            <div class="quiz-controls">
+                <label for="language-select">Оберіть мову тесту:</label>
+                <select id="language-select" onchange="loadQuestions()">
+                    <option value="english">Англійська</option>
+                    <option value="german">Німецька</option>
+                    <option value="polish">Польська</option>
+                    <option value="ukrainian">Українська</option>
+                </select>
+            </div>
+        
             <form id="language-test">
-                <label for="question1">1. Як буде "яблуко" англійською?</label>
-                <select id="question1">
-                    <option value="wrong">Orange</option>
-                    <option value="wrong">Banana</option>
-                    <option value="correct">Apple</option>
-                </select>
-
-                <label for="question2">2. Яке дієслово означає "читати"?</label>
-                <select id="question2">
-                    <option value="wrong">Write</option>
-                    <option value="correct">Read</option>
-                    <option value="wrong">Sing</option>
-                </select>
-
-                <button type="button" onclick="checkAnswers()">Перевірити</button>
+                <div id="questions-container"></div>
+        
+                <button type="button" class="btn" onclick="checkAnswers()">Перевірити</button>
                 <p id="quiz-result"></p>
             </form>
         </section>
