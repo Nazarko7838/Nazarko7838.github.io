@@ -148,6 +148,25 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
+.language-selector {
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.language-selector label {
+    font-size: 1.2em;
+    color: #333;
+}
+.language-selector select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
 
 .stats {
     background: #eef2ff;
@@ -188,6 +207,31 @@ nav ul li a:hover {
     color: #555;
     margin: 5px 0;
 }
+
+.reset-progress {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#reset-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #c82333;
+}
+
+#reset-button:active {
+    background-color: #a71d2a;
+}
+
 
 @media screen and (max-width: 768px) {
     header {
