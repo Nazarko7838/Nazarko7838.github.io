@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    showLessons('english'); // Відкрити англійську мову за замовчуванням
-    loadProgress(); // Завантажити прогрес уроків
+    showLessons('english'); 
+    loadProgress();
 });
 
 function showLessons(language) {
