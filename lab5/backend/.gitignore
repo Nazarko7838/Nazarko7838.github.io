@@ -1,2 +1,10 @@
 /serviceAccountKey.json
 /node_modules
+# Ігнорувати node_modules та кеші
+node_modules/
+.cache/
+*.zip
+
+# .gitignore
+lab-4/React/easylanguage/node_modules/
+*.zip
