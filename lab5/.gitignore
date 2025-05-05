@@ -1,0 +1,6 @@
+/serviceAccountKey.json
+/node_modules
+# Ігнорувати node_modules та кеші
+node_modules/
+.cache/
+*.zip
