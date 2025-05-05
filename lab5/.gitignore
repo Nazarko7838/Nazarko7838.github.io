@@ -4,3 +4,7 @@
 node_modules/
 .cache/
 *.zip
+
+# .gitignore
+lab-4/React/easylanguage/node_modules/
+*.zip
