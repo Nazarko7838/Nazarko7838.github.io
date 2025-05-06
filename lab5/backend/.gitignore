@@ -1,4 +1,5 @@
 /serviceAccountKey.json
+lab5/backend/serviceAccountKey.json
 /node_modules
 # Ігнорувати node_modules та кеші
 node_modules/
@@ -9,4 +10,4 @@ node_modules/
 lab-4/React/easylanguage/node_modules/
 *.zip
 
-backend/serviceAccountKey.json
+lab5/backend/serviceAccountKey.json
