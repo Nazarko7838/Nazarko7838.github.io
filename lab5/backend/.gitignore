@@ -8,3 +8,5 @@ node_modules/
 # .gitignore
 lab-4/React/easylanguage/node_modules/
 *.zip
+
+backend/serviceAccountKey.json
